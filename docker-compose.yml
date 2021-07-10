@@ -1,0 +1,15 @@
+version: '2.1'
+
+services: 
+    angular:
+        image: angular
+        build: .
+        ports: 
+            - 3000:3000
+    nginx:
+        image: nginx
+        build: .
+        ports: 
+            - 8081:80
+        
+            
