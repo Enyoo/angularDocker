@@ -6,7 +6,7 @@ COPY ./ /usr/local/app/
 
 RUN npm install
 
-RUN npm run build
+RUN npm start
 
 FROM nginx as nginx
 
